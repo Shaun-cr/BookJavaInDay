@@ -1,4 +1,4 @@
-package Sel.a;
+package chapter2;
 
 /**
  * Hello world!

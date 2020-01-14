@@ -70,13 +70,38 @@ public class Chapter4 {
 		Arrays.parallelSort(numbers2);
 		System.out.println("Order by " + Arrays.toString(numbers2));
 		
+		//binarySearch
+		int[] myInt = {21,23,34,45,56,78,99};
+		int foundIndex = Arrays.binarySearch(myInt, 78);
+		System.out.println(foundIndex);
+		int foundIndex2 = Arrays.binarySearch(myInt, 39);
+		System.out.println(foundIndex2);
+		System.out.println("-4 means, - is value not found. 4 was calculated where value should have been(3) + 1");
+		
+		//Array lenght
+		int[] userAge = {21,22,26,32,40};
+		System.out.println("Array lenght:" + userAge.length);
+		
+		
+		
+	}
+	
+	public static void part4point3() {
+		//Primitive Type store value
+		int myNumber = 5;
+		//Reference Type doesn't store value but reference to it memory,( store address of value)
+		String message = "Hello";
+		
+		//Strings are immutable , cannot change ()
+		//Java stores this as new value in memory ,and message is now referencing to it
+		message = "World";
 	}
 
 	public static void main(String[] args) {
 		//part4point1();
 		//part4point2();
-		 part4point2Coninues1();
-		 //
+		//part4point2Coninues1();
+		part4point3();
 	}
 
 }
